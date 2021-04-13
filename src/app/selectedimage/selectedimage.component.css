@@ -1,0 +1,14 @@
+p {
+  text-align: center;
+}
+
+label {
+  background-color: #39628b;
+  border-radius: 0.5rem;
+  padding: 10px;
+  color: #ffffff;
+}
+
+label > input {
+  display: none;
+}

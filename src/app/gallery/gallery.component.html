@@ -1,0 +1,16 @@
+<h1>画像表示ページ</h1>
+<ng-container *ngFor="let image of images$ | async">
+  <img src={{image}} width="300" height="300">
+  <br>
+  <label>
+    カメラから追加！
+    <input
+      (change)="capture($event)"
+      type="file"
+      accept="image/*"
+      capture="camera"
+      id="capture"
+    />
+  </label>
+  <br>
+</ng-container>
