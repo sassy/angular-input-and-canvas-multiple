@@ -17,7 +17,7 @@ export class SelectedimageComponent {
     const reader = new FileReader();
     reader.onload = () => {
       const image = new Image();
-      this.imageSaveService.addImage(reader.result as string);
+      this.imageSaveService.addImage(0, reader.result as string);
       this.router.navigate(["gallery"]);
     };
     reader.readAsDataURL((ev.target as HTMLInputElement).files[0]);

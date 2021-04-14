@@ -1,6 +1,6 @@
 <h1>画像表示ページ</h1>
-<ng-container *ngFor="let image of images$ | async">
-  <img src={{image}} width="300" height="300">
+<ng-container *ngFor="let entry of images$ | async">
+  <img src={{entry.image}} width="300" height="300">
   <br>
   <label>
     カメラから追加！
@@ -12,5 +12,6 @@
       id="capture"
     />
   </label>
+  <button (click)="onDelete(entry.id)">削除</button>
   <br>
 </ng-container>

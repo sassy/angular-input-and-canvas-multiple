@@ -1,8 +1,22 @@
 label {
+  margin: 20px 10px;
   background-color: #39628b;
   border-radius: 0.5rem;
   padding: 10px;
   color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button {
+  margin: 20px 10px;
+  appearance: none;
+  outline: none;
+  background-color: #39628b;
+  border-radius: 0.5rem;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 16px;
 }
 
 label > input {

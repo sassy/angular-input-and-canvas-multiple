@@ -16,8 +16,12 @@ export class GalleryComponent {
     const reader = new FileReader();
     reader.onload = () => {
       const image = new Image();
-      this.imageSaveService.addImage(reader.result as string);
+      this.imageSaveService.addImage(Date.now(), reader.result as string);
     };
     reader.readAsDataURL((event.target as HTMLInputElement).files[0]);
+  }
+
+  onDelete(id: number) {
+    this.imageSaveService.removeImage(id);
   }
 }
