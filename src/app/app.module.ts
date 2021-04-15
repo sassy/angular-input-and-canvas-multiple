@@ -7,11 +7,16 @@ import { HelloComponent } from "./hello.component";
 import { SelectedimageComponent } from "./selectedimage/selectedimage.component";
 import { ImageSaveService } from "./image-save.service";
 import { AppRoutingModule } from "./app.routing.module";
-import { GalleryComponent } from './gallery/gallery.component';
+import { GalleryComponent } from "./gallery/gallery.component";
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule],
-  declarations: [AppComponent, HelloComponent, SelectedimageComponent, GalleryComponent],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    SelectedimageComponent,
+    GalleryComponent
+  ],
   bootstrap: [AppComponent],
   providers: [ImageSaveService]
 })

@@ -3,6 +3,7 @@ import { RouterModule } from "@angular/router";
 import { HelloComponent } from "./hello.component";
 import { SelectedimageComponent } from "./selectedimage/selectedimage.component";
 import { GalleryComponent } from "./gallery/gallery.component";
+import { SuccessComponent } from "./success/success.component";
 
 @NgModule({
   declarations: [],
@@ -10,6 +11,7 @@ import { GalleryComponent } from "./gallery/gallery.component";
     RouterModule.forRoot([
       { path: "image", component: SelectedimageComponent },
       { path: "gallery", component: GalleryComponent },
+      { path: "success", component: SuccessComponent },
       { path: "", component: HelloComponent }
     ])
   ],
